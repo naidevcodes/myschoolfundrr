@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['IP'] %>
+  username: <%= ENV['MYSCHOOLFUNDRR_DATABASE_USER'] %>
+  password: <%= ENV['MYSCHOOLFUNDRR_DATABASE_PASSWORD'] %>
+  pool: 5
+  template: template0
+
+development:
+  <<: *default
+  database: myschoolfund_development
+
+
+test:
+  <<: *default
+  database: myschoolfund_test
+
+
+production:
+  <<: *default
+  database: myschoolfund_production
