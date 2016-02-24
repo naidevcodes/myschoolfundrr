@@ -11,11 +11,11 @@ RSpec.feature 'Listing all fundrrs', type: :feature do
   
   scenario 'displays the fundrrs' do
     fundrr1 = Fundrr.create!(title: 'Test Fundrr', description: 'For testing', 
-      start_date: '2016-01-20', duration: 90, fundrr_goal: 28000.00)
+      start_date: '2016-01-20', duration: 90, fundrr_goal: 20000.00)
     fundrr2 = Fundrr.create!(title: 'Test FundrrA', description: 'For testing', 
-      start_date: '2016-01-20', duration: 90, fundrr_goal: 28000.00)
+      start_date: '2016-01-20', duration: 90, fundrr_goal: 20000.00)
     fundrr3 = Fundrr.create!(title: 'Test FundrrB', description: 'For testing', 
-      start_date: '2016-01-20', duration: 90, fundrr_goal: 28000.00)
+      start_date: '2016-01-20', duration: 90, fundrr_goal: 20000.00)
     
     vist '/'
     click_link 'Fundrrs'
